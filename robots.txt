@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://getcre8labs.com/sitemap.xml
