@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What our clients say about Cre8Labs — real testimonials from real businesses.">
+  <meta name="theme-color" content="#000000">
+  <title>Testimonials — Cre8Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-hero{padding:140px 0 60px;text-align:center;position:relative}
+    .page-hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none}
+    .page-hero__title{font-size:clamp(34px,5vw,52px);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+    .page-hero__desc{font-size:17px;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.7}
+    .testimonials__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .testimonial-card{background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius-lg);padding:36px 32px;position:relative;transition:all .3s}
+    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 0 30px var(--teal-glow)}
+    .testimonial-card__stars{color:var(--teal);font-size:14px;margin-bottom:16px}
+    .testimonial-card__text{font-size:15px;color:var(--text-muted);line-height:1.85;font-style:italic;margin-bottom:24px}
+    .testimonial-card__author{display:flex;align-items:center;gap:14px}
+    .testimonial-card__avatar{width:44px;height:44px;border-radius:50%;background:var(--teal-bg);border:1px solid var(--teal-border);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:var(--teal);flex-shrink:0}
+    .testimonial-card__name{font-size:14px;font-weight:700}
+    .testimonial-card__role{font-size:12px;color:var(--text-dim);margin-top:2px}
+    .testimonial-card__quote-icon{position:absolute;top:20px;right:24px;font-size:48px;color:var(--teal-border);line-height:1;opacity:.3;font-family:Georgia,serif}
+    @media(max-width:768px){.testimonials__grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="floating-shapes">
+  <div class="shape shape--1"></div><div class="shape shape--2"></div>
+  <div class="shape shape--3"></div><div class="shape shape--4"></div>
+  <div class="shape shape--5"></div>
+</div>
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:36px;width:auto;"></a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Call</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="page-hero__bg" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none"></div>
+    <div class="container page-hero__inner">
+      <div style="position:absolute;top:0;right:-5%;width:400px;height:400px;pointer-events:none;z-index:0" id="orbContainer"></div>
+      <span class="section__tag">Testimonials</span>
+      <h1 class="page-hero__title">What Our <span class="text-accent">Clients Say</span></h1>
+      <p class="page-hero__desc">Real words from real business owners we've helped grow. But don't take our word for it… 😉</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="testimonials__grid">
+
+        <!-- Frozen Dastarkhan -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"We saw almost 200% better results from our Facebook Ads campaign. Cre8Labs delivered a professional approach, strong strategy, and clear improvements in performance. Highly recommended for any business looking to grow online."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">FD</div>
+            <div>
+              <div class="testimonial-card__name">Frozen Dastarkhan</div>
+              <div class="testimonial-card__role">Frozen Food Brand, Mansehra</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Onezon Store -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"We took Facebook Ads services from Cre8Labs and the results were excellent. Our sales jumped significantly — Rs 265,180 in the first month alone. I recommend Cre8Labs to everyone looking to grow their business online."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">OZ</div>
+            <div>
+              <div class="testimonial-card__name">Onezon Store</div>
+              <div class="testimonial-card__role">Shopify E-Commerce Brand</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elysiums -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"We needed results fast. Cre8Labs built our entire digital presence from zero and delivered 200% ROI in the first month. The landing page alone has been converting at rates we didn't think were possible."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">EL</div>
+            <div>
+              <div class="testimonial-card__name">Elysiums</div>
+              <div class="testimonial-card__role">Premium Service Business</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health Practice -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"The funnel overhaul completely transformed how we generate leads. Tripled our qualified leads in 60 days. The email automation alone saved us hours of manual follow-up every week. Truly a game changer for our practice."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">HC</div>
+            <div>
+              <div class="testimonial-card__name">Health Practice</div>
+              <div class="testimonial-card__role">Healthcare Provider</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-Commerce Brand -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Our CPA dropped by 45% while we actually scaled our ad spend 3x. Cre8Labs didn't just lower costs — they built a full-funnel retargeting system that keeps converting. Best investment we've made in our marketing."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">EC</div>
+            <div>
+              <div class="testimonial-card__name">E-Commerce Brand</div>
+              <div class="testimonial-card__role">Online Retail</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coach -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-icon">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"The A/B testing and landing page rewrite increased our conversion rate by 65%. For a high-ticket coaching business, that's massive. Cre8Labs understands how to write copy that actually sells — not just sounds good."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CO</div>
+            <div>
+              <div class="testimonial-card__name">Coach</div>
+              <div class="testimonial-card__role">High-Ticket Coaching</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;background:var(--black-alt);">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Ready to Be Our Next <span class="text-accent">Success Story</span>?</h2>
+        <p class="section__desc">Book a free growth audit and let's identify the biggest opportunities in your funnel.</p>
+      </div>
+      <a href="contact.html" class="btn btn--primary" style="font-size:17px;padding:16px 40px;">Book Your Free Growth Audit →</a>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;"></a><p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p></div>
+      <div class="footer__col"><h4 class="footer__heading">Services</h4><ul class="footer__list"><li><a href="service-copywriting.html">Conversion Copywriting</a></li><li><a href="service-paid-ads.html">Paid Ads</a></li><li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="blog.html" target="_blank">Blog</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Contact</h4><ul class="footer__list"><li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p></div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

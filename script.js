@@ -169,3 +169,10 @@ if(statsSec){
 
 // === INIT ===
 initOrb();
+
+// === GLOBAL ENTRANCE ANIMATION ===
+gsap.from('main > section:first-child .section__tag, main > section:first-child .page-hero__title, main > section:first-child .page-hero__desc',{
+  opacity:0,y:20,duration:.5,ease:'power3.out',stagger:.15,delay:.1
+});
+// Fade in service page heroes
+gsap.from('.service-page__hero img',{opacity:0,scale:.8,duration:.6,ease:'back.out(1.7)',delay:.2});

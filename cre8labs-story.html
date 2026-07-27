@@ -57,6 +57,7 @@
 <main>
   <section class="section" style="padding-top:0;">
     <div class="container blog-article">
+      <div style="position:absolute;top:0;right:-5%;width:400px;height:400px;pointer-events:none;z-index:0" id="orbContainer"></div>
       <a href="blog.html" class="blog-article__back">← Back to Blog</a>
       <span class="blog-article__cat">Our Story</span>
       <div class="blog-article__meta">
@@ -150,8 +151,8 @@
         <h4 class="footer__heading">Learn</h4>
         <ul class="footer__list">
           <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="blog.html" target="_blank">Blog</a></li>
-          <li><a href="about.html">About Us</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -168,6 +169,9 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
