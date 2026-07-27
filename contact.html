@@ -102,7 +102,16 @@
               </div>
               <div class="contact__field">
                 <label for="service">Service Interested In</label>
-                <input type="text" name="service" id="service" placeholder="e.g. Copywriting, Paid Ads" readonly style="color:var(--teal);font-weight:600">
+                <select name="service" id="service" multiple style="padding:14px 16px;font-size:15px;font-family:var(--font);color:var(--text);background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius);outline:none;min-height:120px">
+                  <option value="">Select services (hold Ctrl/Cmd for multiple)</option>
+                  <option value="Conversion Copywriting">✍️ Conversion Copywriting</option>
+                  <option value="Paid Ads (Meta + Google)">📢 Paid Ads (Meta + Google)</option>
+                  <option value="Lead-Gen Funnels">⚙️ Lead-Gen Funnels</option>
+                  <option value="SEO">🔍 SEO</option>
+                  <option value="AI Automation">🤖 AI Automation</option>
+                  <option value="Growth Strategy">📊 Growth Strategy</option>
+                </select>
+                <span class="contact__error">Please select a service</span>
               </div>
               <button type="submit" class="btn btn--primary btn--full">
                 Book My Free Growth Audit
@@ -135,7 +144,11 @@
     const params = new URLSearchParams(window.location.search);
     const service = params.get('service');
     const svcField = document.getElementById('service');
-    if (service && svcField) svcField.value = service;
+    if (service && svcField) {
+      for (let opt of svcField.options) {
+        if (opt.value === service) { opt.selected = true; break; }
+      }
+    }
     
     // Success message on form submit
     document.getElementById('contactForm')?.addEventListener('submit', function() {
