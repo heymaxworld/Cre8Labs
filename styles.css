@@ -155,7 +155,8 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%;displ
 .portfolio__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .portfolio__card{background:var(--black-alt);border:1px solid var(--teal-border);border-radius:var(--radius-lg);overflow:hidden;transition:all .3s}
 .portfolio__card:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 0 30px var(--teal-glow)}
-.portfolio__img{aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:800;color:var(--teal);background:linear-gradient(135deg,var(--teal-bg),transparent)}
+.portfolio__img{aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--black-card)}
+.portfolio__img img{width:100%;height:100%;object-fit:cover}
 .portfolio__body{padding:24px}
 .portfolio__tag{display:inline-block;padding:3px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal);background:var(--teal-bg);border:1px solid var(--teal-border);border-radius:var(--radius-full);margin-bottom:10px}
 .portfolio__body h3{font-size:17px;font-weight:700;margin-bottom:8px}
