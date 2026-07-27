@@ -20,7 +20,8 @@
     .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.22,1,.36,1)}
     .service-card:hover::before{transform:scaleX(1)}
     .service-card:hover{border-color:var(--teal);transform:translateY(-6px);box-shadow:0 0 40px var(--teal-glow)}
-    .service-card__icon{font-size:36px;margin-bottom:20px;display:block;transition:transform .3s}
+    .service-card__icon{display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:transform .3s;height:44px}
+    .service-card__icon img{width:36px;height:36px;display:block;flex-shrink:0}
     .service-card:hover .service-card__icon{transform:scale(1.15)}
     .service-card__title{font-size:18px;font-weight:700;margin-bottom:12px}
     .service-card__desc{font-size:14px;color:var(--text-muted);line-height:1.7}
@@ -68,12 +69,12 @@
     <section class="section" style="padding-top:0;">
       <div class="container">
         <div class="services__grid" id="svcGrid">
-          <a href="service-copywriting.html" class="service-card"><span class="service-card__icon">✍️</span><h3 class="service-card__title">Conversion Copywriting</h3><p class="service-card__desc">Strategic copy that speaks directly to your ideal customer. Landing pages, email sequences, sales pages, and ad copy crafted to drive action — not just engagement.</p></a>
-          <a href="service-paid-ads.html" class="service-card"><span class="service-card__icon">📢</span><h3 class="service-card__title">Paid Ads (Meta + Google)</h3><p class="service-card__desc">Data-backed ad campaigns built on conversion data, not guesses. We manage targeting, creative testing, budget optimization, and full-funnel retargeting.</p></a>
-          <a href="service-lead-funnels.html" class="service-card"><span class="service-card__icon">⚙️</span><h3 class="service-card__title">Lead-Gen Funnels</h3><p class="service-card__desc">End-to-end funnel systems that turn cold traffic into qualified leads. Landing pages, lead magnets, email automation, and follow-up sequences on autopilot.</p></a>
-          <a href="service-seo.html" class="service-card"><span class="service-card__icon">🔍</span><h3 class="service-card__title">SEO</h3><p class="service-card__desc">Search engine optimization that drives organic traffic. On-page SEO, technical audits, local SEO, and content strategy to get your business found on Google.</p></a>
-          <a href="service-ai-automation.html" class="service-card"><span class="service-card__icon">🤖</span><h3 class="service-card__title">AI Automation</h3><p class="service-card__desc">Custom AI workflows for lead nurturing, follow-ups, reporting, and CRM integration. Reduce manual work and scale without hiring more people.</p></a>
-          <a href="service-growth-strategy.html" class="service-card"><span class="service-card__icon">📊</span><h3 class="service-card__title">Growth Strategy</h3><p class="service-card__desc">A comprehensive growth roadmap combining copy, ads, funnels, and automation into one unified system designed for your specific business goals.</p></a>
+          <a href="service-copywriting.html" class="service-card"><span class="service-card__icon"><img src="icons/copywriting.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">Conversion Copywriting</h3><p class="service-card__desc">Strategic copy that speaks directly to your ideal customer. Landing pages, email sequences, sales pages, and ad copy crafted to drive action — not just engagement.</p></a>
+          <a href="service-paid-ads.html" class="service-card"><span class="service-card__icon"><img src="icons/paid-ads.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">Paid Ads (Meta + Google)</h3><p class="service-card__desc">Data-backed ad campaigns built on conversion data, not guesses. We manage targeting, creative testing, budget optimization, and full-funnel retargeting.</p></a>
+          <a href="service-lead-funnels.html" class="service-card"><span class="service-card__icon"><img src="icons/funnels.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">Lead-Gen Funnels</h3><p class="service-card__desc">End-to-end funnel systems that turn cold traffic into qualified leads. Landing pages, lead magnets, email automation, and follow-up sequences on autopilot.</p></a>
+          <a href="service-seo.html" class="service-card"><span class="service-card__icon"><img src="icons/seo.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">SEO</h3><p class="service-card__desc">Search engine optimization that drives organic traffic. On-page SEO, technical audits, local SEO, and content strategy to get your business found on Google.</p></a>
+          <a href="service-ai-automation.html" class="service-card"><span class="service-card__icon"><img src="icons/automation.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">AI Automation</h3><p class="service-card__desc">Custom AI workflows for lead nurturing, follow-ups, reporting, and CRM integration. Reduce manual work and scale without hiring more people.</p></a>
+          <a href="service-growth-strategy.html" class="service-card"><span class="service-card__icon"><img src="icons/growth.svg" alt="" style="width:36px;height:36px;display:block"></span><h3 class="service-card__title">Growth Strategy</h3><p class="service-card__desc">A comprehensive growth roadmap combining copy, ads, funnels, and automation into one unified system designed for your specific business goals.</p></a>
         </div>
       </div>
     </section>
@@ -90,7 +91,7 @@
       <div class="footer__grid">
         <div class="footer__brand"><a href="index.html"><img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;"></a><p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p></div>
         <div class="footer__col"><h4 class="footer__heading">Services</h4><ul class="footer__list"><li><a href="service-copywriting.html">Conversion Copywriting</a></li><li><a href="service-paid-ads.html">Paid Ads</a></li><li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li></ul></div>
-        <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html" target="_blank">Blog</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="blog.html" target="_blank">Blog</a></li></ul></div>
         <div class="footer__col"><h4 class="footer__heading">Contact</h4><ul class="footer__list"><li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
       </div>
       <div class="footer__bottom"><p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p></div>
