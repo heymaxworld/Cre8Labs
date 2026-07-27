@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="contact__inner" id="contactFormWrap">
-            <form class="contact__form" id="contactForm" novalidate netlify name="Contact Form">
+            <form class="contact__form" id="contactForm" netlify name="Contact Form" action="/thank-you" method="POST">
               <input type="hidden" name="form-name" value="Contact Form">
               <div class="contact__row">
                 <div class="contact__field">
@@ -137,17 +137,11 @@
     const svcField = document.getElementById('service');
     if (service && svcField) svcField.value = service;
     
-    // Handle form submission
-    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') return; // Netlify handles it
-      e.preventDefault();
-      const btn = this.querySelector('button[type="submit"]');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      fetch('/', { method: 'POST', body: new FormData(this) })
-        .then(() => { document.getElementById('contactSuccess').style.display='block'; this.reset(); })
-        .catch(() => { alert('Something went wrong. Please email us directly.'); })
-        .finally(() => { btn.textContent='Book My Free Growth Audit'; btn.disabled=false; });
+    // Success message on form submit
+    document.getElementById('contactForm')?.addEventListener('submit', function() {
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        setTimeout(() => { document.getElementById('contactSuccess').style.display='block'; }, 500);
+      }
     });
     
     gsap.timeline().from('.contact__info',{opacity:0,x:-30,duration:.6,ease:'power3.out'}).from('#contactFormWrap',{opacity:0,x:30,duration:.6,ease:'power3.out'},'-=.4');
