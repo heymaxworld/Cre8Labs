@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lead generation funnels that turn cold traffic into qualified leads — landing pages, lead magnets, email automation from Cre8Labs.">
+  <meta name="theme-color" content="#000000">
+  <title>Lead-Gen Funnels — Cre8Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-page{max-width:720px;margin:0 auto}
+    .service-page__hero{aspect-ratio:16/9;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,var(--teal-bg),var(--black-card));border:1px solid var(--teal-border);margin-bottom:40px;position:relative;overflow:hidden}
+    .service-page__hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,var(--black-card))}
+    .service-page h2{font-size:22px;font-weight:800;margin-top:40px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--teal-border)}
+    .service-page p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:16px}
+    .service-page ul{margin-bottom:20px;padding-left:20px}
+    .service-page li{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:8px;list-style:disc}
+    .service-page__features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .service-page__feature{background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius);padding:20px;text-align:center}
+    .service-page__feature-icon{font-size:28px;margin-bottom:8px;display:block}
+    .service-page__feature h4{font-size:15px;font-weight:700;margin-bottom:6px}
+    .service-page__feature p{font-size:13px;color:var(--text-muted);margin:0}
+    @media(max-width:768px){.service-page__features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="floating-shapes">
+  <div class="shape shape--1"></div><div class="shape shape--2"></div>
+  <div class="shape shape--3"></div><div class="shape shape--4"></div>
+  <div class="shape shape--5"></div>
+</div>
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:36px;width:auto;"></a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Call</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+  <section class="page-hero" style="padding-bottom:0;">
+    <div class="page-hero__bg" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none"></div>
+    <div class="container page-hero__inner">
+      <span class="section__tag">Service</span>
+      <h1 class="page-hero__title">Lead-Gen <span class="text-accent">Funnels</span></h1>
+      <p class="page-hero__desc">End-to-end funnel systems that turn cold traffic into qualified leads — landing pages, lead magnets, email automation, all on autopilot.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:40px;">
+    <div class="container">
+      <div class="service-page">
+        <div class="service-page__hero">⚙️</div>
+        <h2>What Is a Lead-Gen Funnel?</h2>
+        <p>A lead generation funnel is a systematic process that takes a stranger from "who are you?" to "here's my contact information" — automatically. It's the difference between chasing leads and having leads come to you.</p>
+        <p>We build complete funnel systems: a lead magnet that attracts your ideal customer, a landing page that converts, and an automated email sequence that nurtures them until they're ready to buy.</p>
+
+        <h2>What We Deliver</h2>
+        <div class="service-page__features">
+          <div class="service-page__feature"><span class="service-page__feature-icon">📄</span><h4>Landing Pages</h4><p>Conversion-optimized pages designed specifically for lead capture — clear value prop, compelling CTA.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">🎁</span><h4>Lead Magnets</h4><p>Checklists, guides, audits, and templates that your ideal customers actually want to download.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">📧</span><h4>Email Automation</h4><p>Welcome sequences, nurture drips, and follow-up campaigns that build trust and drive conversions.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">📊</span><h4>Tracking & Analytics</h4><p>Full funnel tracking so you know exactly where leads come from and what converts them.</p></div>
+        </div>
+
+        <h2>How It Works</h2>
+        <ul>
+          <li><strong>Traffic → Landing Page:</strong> Visitors arrive at a focused page with one goal — to opt in.</li>
+          <li><strong>Opt-In → Lead Magnet:</strong> They exchange their email for something valuable (guide, checklist, audit).</li>
+          <li><strong>Email → Nurture:</strong> Automated sequences deliver value, build authority, and present your offer.</li>
+          <li><strong>Lead → Customer:</strong> When they're ready, they book a call or purchase — without you lifting a finger.</li>
+        </ul>
+
+        <div style="text-align:center;margin-top:48px;">
+          <a href="contact.html?service=Lead-Gen%20Funnels" class="btn btn--primary" style="font-size:17px;padding:16px 40px;">Get a Free Funnel Audit →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;"></a><p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p></div>
+      <div class="footer__col"><h4 class="footer__heading">Services</h4><ul class="footer__list"><li><a href="service-copywriting.html">Conversion Copywriting</a></li><li><a href="service-paid-ads.html">Paid Ads</a></li><li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html" target="_blank">Blog</a></li><li><a href="about.html">About Us</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Contact</h4><ul class="footer__list"><li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

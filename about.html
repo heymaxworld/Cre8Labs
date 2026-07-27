@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Cre8Labs — a conversion copywriting, paid ads, and AI automation agency built for service-based businesses.">
+  <meta name="theme-color" content="#000000">
+  <title>About — Cre8Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .about-story__visual{aspect-ratio:1;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--teal-bg),var(--black-card));border:1px solid var(--teal-border)}
+    .about-story h2{font-size:clamp(28px,3.5vw,38px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+    .about-story p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:16px}
+    .about-story .highlight-text{color:var(--teal);font-weight:600}
+
+    .values__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .value-card{background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius-lg);padding:36px 28px;text-align:center;transition:all .3s}
+    .value-card:hover{border-color:var(--teal);transform:translateY(-4px);box-shadow:0 0 30px var(--teal-glow)}
+    .value-card__icon{font-size:36px;margin-bottom:16px;display:block}
+    .value-card h3{font-size:17px;font-weight:700;margin-bottom:12px}
+    .value-card p{font-size:14px;color:var(--text-muted);line-height:1.7}
+
+    .about-framework{background:var(--black-alt);position:relative;overflow:hidden}
+    .about-framework::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,var(--teal-glow),transparent 70%);pointer-events:none}
+    .fw-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+    .fw-step{text-align:center;padding:32px 20px;background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius-lg);transition:all .3s}
+    .fw-step:hover{border-color:var(--teal);transform:translateY(-4px)}
+    .fw-step__num{width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--teal);background:var(--black);border:2px solid var(--teal);border-radius:50%;margin-bottom:16px}
+    .fw-step h3{font-size:17px;font-weight:700;margin-bottom:10px}
+    .fw-step p{font-size:14px;color:var(--text-muted);line-height:1.7}
+
+    .about-mission{text-align:center;max-width:640px;margin:0 auto}
+    .about-mission blockquote{font-size:20px;font-weight:600;color:var(--text);line-height:1.7;font-style:italic;padding:32px;border-left:3px solid var(--teal);background:var(--teal-bg);border-radius:var(--radius);margin-bottom:24px}
+    .about-mission cite{font-size:13px;color:var(--text-muted);font-style:normal;display:block;margin-top:12px}
+
+    @media(max-width:768px){
+      .about-story{grid-template-columns:1fr;gap:32px}
+      .about-story__visual{order:-1;aspect-ratio:3/2}
+      .values__grid{grid-template-columns:1fr}
+      .fw-steps{grid-template-columns:1fr 1fr}
+      .about-mission blockquote{font-size:17px}
+    }
+    @media(max-width:480px){
+      .fw-steps{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<div class="floating-shapes">
+  <div class="shape shape--1"></div><div class="shape shape--2"></div>
+  <div class="shape shape--3"></div><div class="shape shape--4"></div>
+  <div class="shape shape--5"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Cre8Labs" style="height:36px;width:auto;">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Call</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none"></div>
+    <div class="container page-hero__inner">
+      <span class="section__tag">About Us</span>
+      <h1 class="page-hero__title">We Turn <span class="text-accent">Clicks</span> Into Customers</h1>
+      <p class="page-hero__desc">Copy that converts. Ads that perform. Systems that scale. We're Cre8Labs — a growth agency for service-based businesses.</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section" style="padding-top:20px;">
+    <div class="container">
+      <div class="about-story">
+        <div>
+          <h2>Who We <span class="text-accent">Are</span></h2>
+          <p>Cre8Labs was built for one reason: most agencies talk about results, but few actually deliver them. We saw too many service-based businesses wasting money on generic marketing that looked good but didn't convert.</p>
+          <p>So we built something different — a growth system that combines <span class="highlight-text">conversion copywriting</span>, <span class="highlight-text">data-backed paid ads</span>, and <span class="highlight-text">AI-powered automation</span> into one unified machine. Every campaign, every word, every optimization is measured against one question: <strong>did it grow the business?</strong></p>
+          <p>We don't do "brand awareness" for the sake of it. We build systems that turn traffic into revenue — from the first click to the final sale.</p>
+        </div>
+        <div>
+          <div class="about-story__visual" style="position:relative;overflow:hidden">
+            <div id="orbContainer" style="position:absolute;inset:0"></div>
+            <div style="position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:16px;pointer-events:none">
+              <div style="display:flex;gap:4px">
+                <span style="font-size:64px;font-weight:800;color:#fff;display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow)">C</span>
+                <span style="font-size:64px;font-weight:800;color:#fff;display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.1s">R</span>
+                <span style="font-size:64px;font-weight:800;color:#fff;display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.2s">E</span>
+                <span style="font-size:64px;font-weight:800;color:#fff;display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.3s">8</span>
+                <span style="font-size:64px;font-weight:800;color:var(--teal);display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.4s">L</span>
+                <span style="font-size:64px;font-weight:800;color:var(--teal);display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.5s">A</span>
+                <span style="font-size:64px;font-weight:800;color:var(--teal);display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.6s">B</span>
+                <span style="font-size:64px;font-weight:800;color:var(--teal);display:inline-block;animation:letterPop 2s ease-in-out infinite;text-shadow:0 0 40px var(--teal-glow);animation-delay:.7s">S</span>
+              </div>
+              <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--text-muted);animation:taglineFade 2s ease .8s forwards;opacity:0">Copy. Systems. Growth.</div>
+            </div>
+          </div>
+        </div>
+        <style>
+          #orbContainer{width:100%;height:100%;min-height:400px;aspect-ratio:1;border-radius:var(--radius-lg);border:1px solid var(--teal-border);overflow:hidden;position:relative}
+          #orbContainer canvas{width:100%!important;height:100%!important}
+          .about-visual__tagline{text-align:center;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--text-muted);margin-top:20px;animation:taglineFade 2s ease .8s forwards;opacity:0;position:relative;z-index:2}
+          @keyframes taglineFade{to{opacity:1}}
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat">
+          <span class="stat__num" data-target="3200">0</span>
+          <span class="stat__label">Leads Generated</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="212">0</span>
+          <span class="stat__label">Avg. ROAS Improvement</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="48">0</span>
+          <span class="stat__label">Funnels Built</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num stat__num--np" data-target="30">0</span>
+          <span class="stat__label">Businesses Served</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Our DNA</span>
+        <h2 class="section__title">What We <span class="text-accent">Believe In</span></h2>
+        <p class="section__desc">These principles guide every campaign we build and every decision we make.</p>
+      </div>
+      <div class="values__grid">
+        <div class="value-card">
+          <span class="value-card__icon">🎯</span>
+          <h3>Data Over Ego</h3>
+          <p>We don't guess. Every decision is backed by real campaign data, conversion metrics, and customer behavior — not gut feelings.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">⚡</span>
+          <h3>Speed With Precision</h3>
+          <p>We move fast, but never sloppy. Every campaign is structured for scale from day one — tested, optimized, and ready to grow.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">🔄</span>
+          <h3>Always Optimizing</h3>
+          <p>Good enough is never enough. We continuously test, refine, and improve every element — copy, creative, targeting, and funnel flow.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">🤖</span>
+          <h3>Humans + AI</h3>
+          <p>The best results come from combining strategic human thinking with AI-powered efficiency. We use both to maximize every rupee.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">🔍</span>
+          <h3>Radical Transparency</h3>
+          <p>You get full visibility into every campaign — what's working, what's not, and exactly where your money is going. No smoke and mirrors.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">📈</span>
+          <h3>Revenue First</h3>
+          <p>Vanity metrics don't pay the bills. We optimize for one thing: revenue growth. Every action ties back to your bottom line.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Framework -->
+  <section class="section about-framework">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">How We Work</span>
+        <h2 class="section__title">The <span class="text-accent">Precision</span> Framework</h2>
+        <p class="section__desc">A proven 4-step system that transforms underperforming campaigns into revenue engines.</p>
+      </div>
+      <div class="fw-steps">
+        <div class="fw-step">
+          <div class="fw-step__num">01</div>
+          <h3>Audit</h3>
+          <p>We find every leak in your funnel — from ad targeting to conversion paths — so nothing is left to chance.</p>
+        </div>
+        <div class="fw-step">
+          <div class="fw-step__num">02</div>
+          <h3>Architect</h3>
+          <p>Custom growth system designed for your business: copy, funnels, ads, and automation working as one machine.</p>
+        </div>
+        <div class="fw-step">
+          <div class="fw-step__num">03</div>
+          <h3>Launch</h3>
+          <p>Data-backed campaigns go live with conversion-optimized creative, precise targeting, and full tracking in place.</p>
+        </div>
+        <div class="fw-step">
+          <div class="fw-step__num">04</div>
+          <h3>Optimize</h3>
+          <p>Continuous A/B testing and refinement so your results improve every week instead of plateauing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section">
+    <div class="container">
+      <div class="about-mission">
+        <span class="section__tag">Our Mission</span>
+        <h2 class="section__title" style="margin-bottom:32px;">Built for <span class="text-accent">Service-Based</span> Businesses</h2>
+        <blockquote>
+          "We believe every service business deserves a growth system that actually works — not just pretty ads and empty metrics. If we can't measure it, we don't do it. If it doesn't grow revenue, we change it."
+          <cite>— Cre8Labs Team</cite>
+        </blockquote>
+        <p style="color:var(--text-muted);margin-bottom:32px;">We've helped frozen food brands, e-commerce stores, healthcare practices, and local businesses turn their marketing into a predictable growth machine. Your business could be next.</p>
+        <a href="contact.html" class="btn btn--primary" style="font-size:17px;padding:16px 40px;">Book Your Free Growth Audit</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;">
+        </a>
+        <p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__list">
+          <li><a href="service-copywriting.html">Conversion Copywriting</a></li>
+          <li><a href="service-paid-ads.html">Paid Ads</a></li>
+          <li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Learn</h4>
+        <ul class="footer__list">
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__list">
+          <li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li>
+          <li><a href="contact.html">Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

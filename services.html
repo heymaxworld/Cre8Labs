@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cre8Labs services — Conversion Copywriting, Paid Ads, Lead Funnels, SEO, AI Automation.">
+  <meta name="theme-color" content="#000000">
+  <title>Services — Cre8Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-hero{padding:140px 0 60px;text-align:center;position:relative}
+    .page-hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none}
+    .page-hero__title{font-size:clamp(34px,5vw,52px);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+    .page-hero__desc{font-size:17px;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.7}
+    .services__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service-card{background:var(--black-alt);border:1px solid var(--teal-border);border-radius:var(--radius-lg);padding:36px 28px;transition:all .4s cubic-bezier(.22,1,.36,1);display:block;text-decoration:none;color:inherit;position:relative;overflow:hidden}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+    .service-card:hover::before{transform:scaleX(1)}
+    .service-card:hover{border-color:var(--teal);transform:translateY(-6px);box-shadow:0 0 40px var(--teal-glow)}
+    .service-card__icon{font-size:36px;margin-bottom:20px;display:block;transition:transform .3s}
+    .service-card:hover .service-card__icon{transform:scale(1.15)}
+    .service-card__title{font-size:18px;font-weight:700;margin-bottom:12px}
+    .service-card__desc{font-size:14px;color:var(--text-muted);line-height:1.7}
+    body{cursor:auto}.btn{cursor:pointer}.navbar__links{display:flex;align-items:center;gap:4px}.navbar__toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:101}
+    .navbar__toggle span{display:block;width:20px;height:2px;background:var(--text);border-radius:2px;transition:transform .2s}
+    .navbar__toggle--active span:nth-child(1){transform:rotate(45deg) translateY(5px)}
+    .navbar__toggle--active span:nth-child(2){transform:rotate(-45deg) translateY(-5px)}
+    @media(max-width:768px){
+      .services__grid{grid-template-columns:1fr}
+      .navbar__links{display:none;position:fixed;top:72px;left:16px;right:16px;background:rgba(0,0,0,.95);backdrop-filter:blur(24px);border:1px solid var(--teal-border);border-radius:var(--radius-lg);flex-direction:column;padding:16px;z-index:99}
+      .navbar__links .navbar__link{width:100%;text-align:center;padding:12px 16px}
+      .navbar__toggle{display:flex}
+    }
+    @media(max-width:1024px){.services__grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:480px){.services__grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="floating-shapes">
+    <div class="shape shape--1"></div><div class="shape shape--2"></div>
+    <div class="shape shape--3"></div><div class="shape shape--4"></div>
+    <div class="shape shape--5"></div>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="logo.svg" alt="Cre8Labs" style="height:32px;width:auto;"></a>
+      <ul class="navbar__links">
+        <li><a href="about.html" class="navbar__link">About</a></li>
+        <li><a href="services.html" class="navbar__link">Services</a></li>
+        <li><a href="case-studies.html" class="navbar__link">Case Studies</a></li>
+        <li><a href="contact.html" class="navbar__link navbar__link--cta">Book a Call</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </nav>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg"></div>
+      <div class="container">
+        <div style="position:absolute;top:0;right:-5%;width:400px;height:400px;pointer-events:none;z-index:0" id="orbContainer"></div>
+        <h1 class="page-hero__title" id="svcTitle">Full-Service <span class="text-accent">Growth</span> Systems</h1>
+        <p class="page-hero__desc" id="svcDesc">From copy to campaigns to automation — everything you need to turn traffic into revenue.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="services__grid" id="svcGrid">
+          <a href="service-copywriting.html" class="service-card"><span class="service-card__icon">✍️</span><h3 class="service-card__title">Conversion Copywriting</h3><p class="service-card__desc">Strategic copy that speaks directly to your ideal customer. Landing pages, email sequences, sales pages, and ad copy crafted to drive action — not just engagement.</p></a>
+          <a href="service-paid-ads.html" class="service-card"><span class="service-card__icon">📢</span><h3 class="service-card__title">Paid Ads (Meta + Google)</h3><p class="service-card__desc">Data-backed ad campaigns built on conversion data, not guesses. We manage targeting, creative testing, budget optimization, and full-funnel retargeting.</p></a>
+          <a href="service-lead-funnels.html" class="service-card"><span class="service-card__icon">⚙️</span><h3 class="service-card__title">Lead-Gen Funnels</h3><p class="service-card__desc">End-to-end funnel systems that turn cold traffic into qualified leads. Landing pages, lead magnets, email automation, and follow-up sequences on autopilot.</p></a>
+          <a href="service-seo.html" class="service-card"><span class="service-card__icon">🔍</span><h3 class="service-card__title">SEO</h3><p class="service-card__desc">Search engine optimization that drives organic traffic. On-page SEO, technical audits, local SEO, and content strategy to get your business found on Google.</p></a>
+          <a href="service-ai-automation.html" class="service-card"><span class="service-card__icon">🤖</span><h3 class="service-card__title">AI Automation</h3><p class="service-card__desc">Custom AI workflows for lead nurturing, follow-ups, reporting, and CRM integration. Reduce manual work and scale without hiring more people.</p></a>
+          <a href="service-growth-strategy.html" class="service-card"><span class="service-card__icon">📊</span><h3 class="service-card__title">Growth Strategy</h3><p class="service-card__desc">A comprehensive growth roadmap combining copy, ads, funnels, and automation into one unified system designed for your specific business goals.</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="text-align:center;background:var(--black-alt);">
+      <div class="container">
+        <h2 class="section__title">Not Sure <span class="text-accent">Where to Start</span>?</h2>
+        <p class="section__desc" style="margin-bottom:32px;">Book a free growth audit and we'll identify the biggest opportunities in your funnel.</p>
+        <a href="contact.html" class="btn btn--primary">Get a Free Growth Audit</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html"><img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;"></a><p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p></div>
+        <div class="footer__col"><h4 class="footer__heading">Services</h4><ul class="footer__list"><li><a href="service-copywriting.html">Conversion Copywriting</a></li><li><a href="service-paid-ads.html">Paid Ads</a></li><li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li></ul></div>
+        <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html" target="_blank">Blog</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer__col"><h4 class="footer__heading">Contact</h4><ul class="footer__list"><li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p></div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

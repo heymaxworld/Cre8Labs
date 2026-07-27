@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SEO services — on-page SEO, technical audits, local SEO, and content strategy from Cre8Labs.">
+  <meta name="theme-color" content="#000000">
+  <title>SEO — Cre8Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-page{max-width:720px;margin:0 auto}
+    .service-page__hero{aspect-ratio:16/9;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,var(--teal-bg),var(--black-card));border:1px solid var(--teal-border);margin-bottom:40px;position:relative;overflow:hidden}
+    .service-page__hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,var(--black-card))}
+    .service-page h2{font-size:22px;font-weight:800;margin-top:40px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--teal-border)}
+    .service-page p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:16px}
+    .service-page ul{margin-bottom:20px;padding-left:20px}
+    .service-page li{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:8px;list-style:disc}
+    .service-page__features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .service-page__feature{background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius);padding:20px;text-align:center}
+    .service-page__feature-icon{font-size:28px;margin-bottom:8px;display:block}
+    .service-page__feature h4{font-size:15px;font-weight:700;margin-bottom:6px}
+    .service-page__feature p{font-size:13px;color:var(--text-muted);margin:0}
+    @media(max-width:768px){.service-page__features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="floating-shapes">
+  <div class="shape shape--1"></div><div class="shape shape--2"></div>
+  <div class="shape shape--3"></div><div class="shape shape--4"></div>
+  <div class="shape shape--5"></div>
+</div>
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:36px;width:auto;"></a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Call</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+  <section class="page-hero" style="padding-bottom:0;">
+    <div class="page-hero__bg" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none"></div>
+    <div class="container page-hero__inner">
+      <span class="section__tag">Service</span>
+      <h1 class="page-hero__title">Search Engine <span class="text-accent">Optimization</span></h1>
+      <p class="page-hero__desc">On-page SEO, technical audits, local SEO, and content strategy to get your business found on Google — when customers are searching.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:40px;">
+    <div class="container">
+      <div class="service-page">
+        <div class="service-page__hero">🔍</div>
+        <h2>Why SEO Matters</h2>
+        <p>When someone searches for your service on Google, your business should be the first result they see. SEO is the practice of making that happen — consistently, sustainably, without paying per click.</p>
+        <p>Unlike paid ads that stop the moment you stop paying, SEO compounds over time. A well-optimized website continues to generate free organic traffic months and years after the work is done.</p>
+
+        <h2>What We Deliver</h2>
+        <div class="service-page__features">
+          <div class="service-page__feature"><span class="service-page__feature-icon">📋</span><h4>On-Page SEO</h4><p>Title tags, meta descriptions, headers, content optimization — every page optimized for search intent.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">🔧</span><h4>Technical Audits</h4><p>Site speed, mobile optimization, crawl errors, structured data — fixing everything that holds your rankings back.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">📍</span><h4>Local SEO</h4><p>Google Business Profile optimization, local citations, and review management for service-area businesses.</p></div>
+          <div class="service-page__feature"><span class="service-page__feature-icon">✍️</span><h4>Content Strategy</h4><p>Blog posts, guides, and service pages designed to rank for the keywords your customers actually search.</p></div>
+        </div>
+
+        <div style="text-align:center;margin-top:48px;">
+          <a href="contact.html?service=SEO" class="btn btn--primary" style="font-size:17px;padding:16px 40px;">Get a Free SEO Audit →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" class="logo"><img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;"></a><p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p></div>
+      <div class="footer__col"><h4 class="footer__heading">Services</h4><ul class="footer__list"><li><a href="service-copywriting.html">Conversion Copywriting</a></li><li><a href="service-paid-ads.html">Paid Ads</a></li><li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Learn</h4><ul class="footer__list"><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html" target="_blank">Blog</a></li><li><a href="about.html">About Us</a></li></ul></div>
+      <div class="footer__col"><h4 class="footer__heading">Contact</h4><ul class="footer__list"><li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

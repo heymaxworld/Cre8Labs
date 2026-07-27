@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cre8Labs blog — insights on conversion copywriting, paid ads, funnels, and AI automation.">
+  <meta name="theme-color" content="#000000">
+  <title>Blog — Cre8Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .blog-card{background:var(--black-card);border:1px solid var(--teal-border);border-radius:var(--radius-lg);overflow:hidden;transition:all .4s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
+    .blog-card:hover{transform:translateY(-8px);border-color:var(--teal);box-shadow:0 0 40px var(--teal-glow)}
+    .blog-card__img{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,var(--teal-bg),var(--black-card));position:relative;overflow:hidden}
+    .blog-card__img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,var(--black-card))}
+    .blog-card__body{padding:28px;flex:1;display:flex;flex-direction:column}
+    .blog-card__meta{display:flex;gap:16px;font-size:12px;color:var(--text-dim);margin-bottom:12px}
+    .blog-card__title{font-size:18px;font-weight:700;line-height:1.35;margin-bottom:12px}
+    .blog-card__title a{color:var(--text);transition:color .2s}
+    .blog-card__title a:hover{color:var(--teal)}
+    .blog-card__excerpt{font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:20px;flex:1}
+    .blog-card__link{font-size:13px;font-weight:600;color:var(--teal);display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+    .blog-card__link:hover{gap:8px}
+    .blog-card__tag{display:inline-block;padding:3px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal);background:var(--teal-bg);border:1px solid var(--teal-border);border-radius:var(--radius-full);margin-bottom:14px;width:fit-content}
+    @media(max-width:1024px){.blog__grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){.blog__grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="floating-shapes">
+  <div class="shape shape--1"></div><div class="shape shape--2"></div>
+  <div class="shape shape--3"></div><div class="shape shape--4"></div>
+  <div class="shape shape--5"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Cre8Labs" style="height:36px;width:auto;">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+        <li><a href="blog.html" class="nav__link nav__link--active">Blog</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Call</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero__bg" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,var(--teal-glow),transparent 60%);pointer-events:none"></div>
+    <div class="container page-hero__inner">
+      <span class="section__tag">Blog</span>
+      <h1 class="page-hero__title">Insights for <span class="text-accent">Growth</span></h1>
+      <p class="page-hero__desc">Actionable strategies on copywriting, paid ads, funnel building, and AI automation — straight from the Cre8Labs team.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px;background:linear-gradient(135deg,var(--teal-bg),#050505)">🎯</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Our Story</span>
+            <div class="blog-card__meta">
+              <span>📅 Cre8Labs</span>
+              <span>📖 Founder's Journey</span>
+            </div>
+            <h3 class="blog-card__title">From MLT Graduate to Running a Growth Agency — The Cre8Labs Story</h3>
+            <p class="blog-card__excerpt">How a Medical Lab Technology graduate went from running lab tests to running ad campaigns — and built an agency that's helped 50+ businesses grow.</p>
+            <a href="cre8labs-story.html" class="blog-card__link">Read the Full Story →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px">✍️</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Service</span>
+            <div class="blog-card__meta">
+              <span>📅 Copywriting</span>
+              <span>📖 High-Converting Copy</span>
+            </div>
+            <h3 class="blog-card__title">Conversion Copywriting That Actually Sells</h3>
+            <p class="blog-card__excerpt">Strategic copy that speaks directly to your ideal customer — landing pages, email sequences, sales pages, and ad copy crafted to drive action, not just engagement. Every word earns its place.</p>
+            <a href="service-copywriting.html" class="blog-card__link">Explore This Service →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px">📢</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Service</span>
+            <div class="blog-card__meta">
+              <span>📅 Paid Ads</span>
+              <span>📖 Meta + Google</span>
+            </div>
+            <h3 class="blog-card__title">Paid Ads That Generate Real ROI</h3>
+            <p class="blog-card__excerpt">Meta and Google ad campaigns built on conversion data, not guesses. We manage targeting, creative testing, budget optimization, and full-funnel retargeting so every rupee works harder.</p>
+            <a href="service-paid-ads.html" class="blog-card__link">Explore This Service →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px">⚙️</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Service</span>
+            <div class="blog-card__meta">
+              <span>📅 Lead Funnels</span>
+              <span>📖 End-to-End Systems</span>
+            </div>
+            <h3 class="blog-card__title">Lead-Gen Funnels That Never Stop Converting</h3>
+            <p class="blog-card__excerpt">End-to-end funnel systems that turn cold traffic into qualified leads. Landing pages, lead magnets, email automation, and follow-up sequences — all on autopilot.</p>
+            <a href="service-lead-funnels.html" class="blog-card__link">Explore This Service →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px">🔍</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Service</span>
+            <div class="blog-card__meta">
+              <span>📅 SEO</span>
+              <span>📖 Organic Growth</span>
+            </div>
+            <h3 class="blog-card__title">SEO — Get Found on Google</h3>
+            <p class="blog-card__excerpt">Search engine optimization that drives organic traffic. On-page SEO, technical audits, local SEO, and content strategy to get your business found when customers are searching.</p>
+            <a href="service-seo.html" class="blog-card__link">Explore This Service →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img" style="font-size:40px">🤖</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Service</span>
+            <div class="blog-card__meta">
+              <span>📅 AI Automation</span>
+              <span>📖 Scale Without Hiring</span>
+            </div>
+            <h3 class="blog-card__title">AI Automation That 10x Your Lead Nurturing</h3>
+            <p class="blog-card__excerpt">Custom AI workflows for lead qualification, follow-ups, reporting, and CRM integration. Reduce manual work and scale your business without hiring more people.</p>
+            <a href="service-ai-automation.html" class="blog-card__link">Explore This Service →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="text-align:center;background:var(--black-alt);">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Want More <span class="text-accent">Actionable Insights</span>?</h2>
+        <p class="section__desc">Subscribe to our newsletter and get practical growth strategies delivered to your inbox every week.</p>
+      </div>
+      <a href="contact.html" class="btn btn--primary" style="font-size:17px;padding:16px 40px;">Get the Newsletter →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="logo.svg" alt="Cre8Labs" style="height:28px;width:auto;">
+        </a>
+        <p class="footer__desc">Conversion copywriting, paid ads, and AI automation for service-based businesses.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__list">
+          <li><a href="service-copywriting.html">Conversion Copywriting</a></li>
+          <li><a href="service-paid-ads.html">Paid Ads</a></li>
+          <li><a href="service-lead-funnels.html">Lead-Gen Funnels</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Learn</h4>
+        <ul class="footer__list">
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__list">
+          <li><a href="mailto:hello@getcre8labs.com">hello@getcre8labs.com</a></li>
+          <li><a href="contact.html">Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Cre8Labs &mdash; Experiment. Optimize. Grow.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
